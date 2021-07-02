@@ -6,3 +6,5 @@ def calculate(math_operation, text_bar):
 	text_bar.delete("1.0", tk.END)
 	text_bar.insert(tk.END, result)
 
+
+print('Done')
