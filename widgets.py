@@ -1,7 +1,6 @@
 import tkinter as tk
 from calculate import calculate
 
-
 SCREEN = tk.Tk()
 SCREEN.geometry("300x500")
 
