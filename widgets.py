@@ -56,14 +56,6 @@ def create_number_buttons():
 	number_9 = tk.Button(text=str(9), height=3, width=10, bg='red', command=lambda:get_the_math_operation('9'))
 	number_9.place(y=320, x=200)
 
-	
-
-if __name__ == '__main__':
-
-	create_number_buttons()
-	create_operation_sign_buttons()
-
-
 
 def create_operation_sign_buttons():
 
