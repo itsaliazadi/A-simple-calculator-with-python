@@ -7,4 +7,4 @@ def calculate(math_operation, text_bar):
 	text_bar.insert(tk.END, result)
 
 
-print('Done')
+
