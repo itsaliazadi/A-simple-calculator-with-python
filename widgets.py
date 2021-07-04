@@ -2,7 +2,7 @@ import tkinter as tk
 from calculate import calculate
 
 SCREEN = tk.Tk()
-SCREEN.geometry("300x500")
+SCREEN.geometry("300x510")
 
 
 text_bar = tk.Text(SCREEN, height=5, width=20)
@@ -26,8 +26,8 @@ def clear_command():
 
 def create_number_buttons():
 
-	number_0 = tk.Button(text=str(0), height=3, width=10, bg='red', command=lambda:get_the_math_operation('0'))
-	number_0.place(y=440)
+	number_0 = tk.Button(text=str(0), height=2, width=10, bg='red', command=lambda:get_the_math_operation('0'))
+	number_0.place(y=460)
 
 	number_1 = tk.Button(text=str(1), height=3, width=10, bg='red', command=lambda:get_the_math_operation('1'))
 	number_1.place(y=400)
@@ -59,16 +59,16 @@ def create_number_buttons():
 
 def create_operation_sign_buttons():
 
-	dot = tk.Button(text=str('.'), height=3, width=10, bg='red', command=lambda:get_the_math_operation('.'))
-	dot.place(y=440, x=100)
+	dot = tk.Button(text=str('.'), height=2, width=10, bg='red', command=lambda:get_the_math_operation('.'))
+	dot.place(y=460, x=100)
 
-	equal = tk.Button(text=str('='), height=3, width=10, bg='blue', command=lambda:calculate(text_bar.get('1.0',tk.END), text_bar))
-	equal.place(y=440, x=200)
+	equal = tk.Button(text=str('='), height=2, width=10, bg='blue', command=lambda:calculate(text_bar.get('1.0',tk.END), text_bar))
+	equal.place(y=460, x=200)
 
 	add = tk.Button(text='+', height=3, width=10, bg='gray', command=lambda:get_the_math_operation('+'))
 	add.place(y=275)
 
-	subtract = tk.Button(text='-', height=3, width=10, bg='gray', command=lambda:get_the_math_operation('-'))
+	subtract = tk.Button(text='_', height=3, width=10, bg='gray', command=lambda:get_the_math_operation('-'))
 	subtract.place(y=275, x=100)
 
 	multiply = tk.Button(text='x', height=3, width=10, bg='gray', command=lambda:get_the_math_operation('*'))
