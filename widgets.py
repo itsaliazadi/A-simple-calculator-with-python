@@ -7,10 +7,11 @@ SCREEN.geometry("300x510")
 
 text_bar = tk.Text(SCREEN, height=5, width=20)
 text_bar.place(y=20, x=80)
-math_operation = ''
+math_operation = '' # We'll store the math operations taken by the user in this variable.
 text_bar.insert(tk.END, math_operation)
 			
 
+# This function brings all the numbers and signs onto the text_bar.
 def get_the_math_operation(text):
 
 	global math_operation
@@ -24,6 +25,7 @@ def clear_command():
 	text_bar.delete(str(index_number))
 
 
+# Creating the buttons related to numbers
 def create_number_buttons():
 
 	number_0 = tk.Button(text=str(0), height=2, width=10, bg='red', command=lambda:get_the_math_operation('0'))
@@ -57,6 +59,7 @@ def create_number_buttons():
 	number_9.place(y=320, x=200)
 
 
+# Creating the buttons related to operation signs
 def create_operation_sign_buttons():
 
 	dot = tk.Button(text=str('.'), height=2, width=10, bg='red', command=lambda:get_the_math_operation('.'))
